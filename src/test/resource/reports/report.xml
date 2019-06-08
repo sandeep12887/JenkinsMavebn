@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="39.454019">
+<testcase classname="User should login the Adactin Application" name="To check whether “search order id ”query is working and displaying the relevant details. - 117" time="39.454019">
+<system-out><![CDATA[Given User should launch the adactin application............................passed
+Then User should Validate the login page....................................passed
+Then User enter the username "<username>" and password "<password>".........passed
+Then User enter the login button............................................passed
+Then User verify that correct username is displayed on the login page.......passed
+Then User should location as in test data "Sydney"..........................passed
+And User should hotel as in test data "Hotel Creek".........................passed
+And User should room type as in test data "Standard"........................passed
+And User should no-of-rooms as in test data "2".............................passed
+And User should enter the today date "01/06/2019"...........................passed
+And User should enter the tomorrow date "02/06/2019"........................passed
+Then User should enter the no of Adults "1" and number of childrens "1".....passed
+Then User click the search button...........................................passed
+And User should click the radiobuttoin......................................passed
+Then User should click the continue button..................................passed
+Then User should enter the "thenu"and"babu"and"kh road"and "1234567891234567".passed
+Then User should enter the card type "VISA" & "August" & "2014" & "1234"....passed
+Then User should click the booknow button...................................passed
+Then User should generate the order number..................................passed
+When User should click the Booked Itinerary button..........................passed
+Then User should enter the order id and click the go button.................passed
+]]></system-out>
+</testcase>
+</testsuite>
