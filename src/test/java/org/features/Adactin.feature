@@ -7,7 +7,7 @@ Then  User should Validate the login page
 Then  User enter the username "<username>" and password "<password>" 
 Then  User enter the login button
 
-
+@tc1
 Scenario Outline: To verify whether the check-outdate field accepts a later date than check in date - 102
 
 Then User verify that correct username is displayed on the login page
@@ -24,7 +24,7 @@ Then User click the search button
 Examples:
 | location | hotel       | roomtype | no of rooms | +7date    | +5date      |
 | Sydney   | Hotel Creek | Standard | 1           |05/06/2019 | 03/06/2019  |
-
+@tc1
 Scenario Outline: To check if error is reported if check-out date field is in the past - 103
 
 Then User verify that correct username is displayed on the login page
@@ -40,7 +40,7 @@ Then User click the search button
 Examples:
 | location | hotel       | roomtype | no of rooms | -date     | -todaydate |
 | Sydney   | Hotel Creek | Standard | 1           |26/05/2019 | 23/05/2019 |
-
+@tc1
 Scenario Outline: To verify whether the select location should be match with search hotel page - 104
 
 Then User verify that correct username is displayed on the login page
@@ -58,7 +58,7 @@ Then User click the search button
 Examples:
 | location | hotel       | roomtype | no of rooms |todaydate  | today+date | adults | child |
 | Sydney   | Hotel Creek | Standard | 1           |01/06/2019 | 02/06/2019 |  1     |  1    |
-
+@tc1
 Scenario Outline: To verify whether the checkin and checkout date is match with nextpage - 105
 
 Then User verify that correct username is displayed on the login page
@@ -77,7 +77,7 @@ Then User click the search button
 Examples:
 | location | hotel       | roomtype | no of rooms |todaydate  | today+date | adults | child |
 | Sydney   | Hotel Creek | Standard | 1           |01/06/2019 | 02/06/2019 |  1     |  1    |
-
+@tc1
 Scenario Outline: To verify whether the checkin and checkout date is match with nextpage - 106
 
 Then User verify that correct username is displayed on the login page
@@ -332,7 +332,7 @@ Examples:
 
 
 
-@tc1
+
 Scenario Outline: To check whether “search order id ”query is working and displaying the relevant details. - 117
 Then  User verify that correct username is displayed on the login page
 Then  User should location as in test data "<location>"
