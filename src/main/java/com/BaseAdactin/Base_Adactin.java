@@ -27,7 +27,7 @@ public class Base_Adactin {
 		try {
 			if (browserName.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
-						"C:\\Users\\Dell\\eclipse-workspace\\Adactin_BDD\\Drivers\\chromedriver.exe");
+						"C:\\Users\\admin\\eclipse-workspace\\AdactinHotelReservation\\Driver\\chromedriver.exe");
 				driver = new ChromeDriver();
 			} else if (browserName.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver", "/firefoxpath");

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.BaseAdactin.Base_Adactin;
-import com.RunnerClass.Runner;
+import com.RunnerClass.TestRunner;
 import com.helper.PageObjectManager;
 import com.helper.PropertyReaderManager;
 
@@ -17,7 +17,7 @@ import cucumber.api.java.en.When;
 
 
 public class Stepdefinition_Adactin extends Base_Adactin {
-	public WebDriver driver = Runner.driver;
+	public WebDriver driver = TestRunner.driver;
 	PageObjectManager pom=new PageObjectManager(driver);
 
 	

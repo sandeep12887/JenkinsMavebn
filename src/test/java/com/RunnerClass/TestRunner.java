@@ -30,7 +30,7 @@ plugin     = {"pretty",
              "json:src\\test\\resource\\reports\\report.json",
 	        "junit:src\\test\\resource\\reports\\report.xml"})
 
-public class Runner {
+public class TestRunner {
 	public static WebDriver driver;
 	@BeforeClass
 	public static void driverinial() throws Exception {
