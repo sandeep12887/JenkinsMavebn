@@ -1,5 +1,6 @@
 com\BaseAdactin\Base_Adactin.class
 com\pomAdactin\Logout_bookingconfirm_page.class
+com\pomAdactin\DemoApp.class
 com\pomAdactin\Welcome_page.class
 com\pomAdactin\BookAHotel_page.class
 com\helper\PropertyReader.class

@@ -1,84 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="12.700546">
-<testcase classname="User should login the Adactin Application" name="To verify whether the check-outdate field accepts a later date than check in date - 102" time="3.874215">
-<system-out><![CDATA[Given User should launch the adactin application............................passed
-Then User should Validate the login page....................................passed
-Then User enter the username "<username>" and password "<password>".........passed
-Then User enter the login button............................................passed
-Then User verify that correct username is displayed on the login page.......passed
-Then User should location as in test data "Sydney"..........................passed
-And User should hotel as in test data "Hotel Creek".........................passed
-And User should room type as in test data "Standard"........................passed
-And User should no-of-rooms as in test data "1".............................passed
-And User Enter check-in-date as in test data "05/06/2019"...................passed
-And User Enter check-out-date as in test data "03/06/2019"..................passed
-Then User Verify that system gives an error message for check in date.......passed
-Then User Verify that system gives an error message for check out date......passed
-Then User click the search button...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User should login the Adactin Application" name="To check if error is reported if check-out date field is in the past - 103" time="1.615657">
-<system-out><![CDATA[Given User should launch the adactin application............................passed
-Then User should Validate the login page....................................passed
-Then User enter the username "<username>" and password "<password>".........passed
-Then User enter the login button............................................passed
-Then User verify that correct username is displayed on the login page.......passed
-Then User should location as in test data "Sydney"..........................passed
-And User should hotel as in test data "Hotel Creek".........................passed
-And User should room type as in test data "Standard"........................passed
-And User should no-of-rooms as in test data "1".............................passed
-And User Enter check-in-date as in test data - before "26/05/2019"..........passed
-And User Enter check-out-date as in test data - before "23/05/2019".........passed
-Then User click the search button...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User should login the Adactin Application" name="To verify whether the select location should be match with search hotel page - 104" time="2.451927">
-<system-out><![CDATA[Given User should launch the adactin application............................passed
-Then User should Validate the login page....................................passed
-Then User enter the username "<username>" and password "<password>".........passed
-Then User enter the login button............................................passed
-Then User verify that correct username is displayed on the login page.......passed
-Then User should location as in test data "Sydney"..........................passed
-And User should hotel as in test data "Hotel Creek".........................passed
-And User should room type as in test data "Standard"........................passed
-And User should no-of-rooms as in test data "1".............................passed
-And User should enter the today date "01/06/2019"...........................passed
-And User should enter the tomorrow date "02/06/2019"........................passed
-Then User should enter the no of Adults "1" and number of childrens "1".....passed
-Then User click the search button...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User should login the Adactin Application" name="To verify whether the checkin and checkout date is match with nextpage - 105" time="2.39024">
-<system-out><![CDATA[Given User should launch the adactin application............................passed
-Then User should Validate the login page....................................passed
-Then User enter the username "<username>" and password "<password>".........passed
-Then User enter the login button............................................passed
-Then User verify that correct username is displayed on the login page.......passed
-Then User should location as in test data "Sydney"..........................passed
-And User should hotel as in test data "Hotel Creek".........................passed
-And User should room type as in test data "Standard"........................passed
-And User should no-of-rooms as in test data "1".............................passed
-And User should enter the today date "01/06/2019"...........................passed
-And User should enter the tomorrow date "02/06/2019"........................passed
-Then User should enter the no of Adults "1" and number of childrens "1".....passed
-Then User click the search button...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User should login the Adactin Application" name="To verify whether the checkin and checkout date is match with nextpage - 106" time="2.368507">
-<system-out><![CDATA[Given User should launch the adactin application............................passed
-Then User should Validate the login page....................................passed
-Then User enter the username "<username>" and password "<password>".........passed
-Then User enter the login button............................................passed
-Then User verify that correct username is displayed on the login page.......passed
-Then User should location as in test data "Sydney"..........................passed
-And User should hotel as in test data "Hotel Creek".........................passed
-And User should room type as in test data "Standard"........................passed
-And User should no-of-rooms as in test data "1".............................passed
-And User should enter the today date "01/06/2019"...........................passed
-And User should enter the tomorrow date "02/06/2019"........................passed
-Then User should enter the no of Adults "1" and number of childrens "1".....passed
-Then User click the search button...........................................passed
-Then verify that room enters in search page should be match with next page..passed
-]]></system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.159055">
+<testcase classname="User should login the Demo Application" name="To login the demo app- 102" time="15.159055">
+<failure message="org.junit.ComparisonFailure: expected:&lt;Project[]&gt; but was:&lt;Project[ name]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at com.stepdefinition.Stepdefinition_Demo.user_verify_the_project_name_in_the_logo(Stepdefinition_Demo.java:47)&#13;&#10;&#9;at ✽.Then User verify the project name in the logo(DemoAp.feature:9)&#13;&#10;"><![CDATA[Given User launch the demo application......................................passed
+When User enter the username in the email feild.............................passed
+And User enter the password in the password feild...........................passed
+And User click on Sign in button............................................passed
+Then User verify the project name in the logo...............................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Project[]> but was:<Project[ name]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.stepdefinition.Stepdefinition_Demo.user_verify_the_project_name_in_the_logo(Stepdefinition_Demo.java:47)
+	at ✽.Then User verify the project name in the logo(DemoAp.feature:9)
+]]></failure>
 </testcase>
 </testsuite>
