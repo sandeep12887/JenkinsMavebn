@@ -14,6 +14,7 @@ public class PropertyReader {
 			prob = new Properties();
 			File propFILE= new File(System.getProperty
 					("user.dir")+"//src//test//resource//com//adatinProperties//config.properties");
+			
 			FileInputStream ip= new FileInputStream(propFILE);
 			prob.load(ip);
 		} catch (Exception e) {
@@ -26,6 +27,7 @@ public class PropertyReader {
 	
 	public String getbrowserName() throws Exception {
         String browser = prob.getProperty("browsername");
+		
         if(browser==null) {
         	throw new Exception("not valid");
         }
